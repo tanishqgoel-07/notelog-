@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>NOTE LOG</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-photo/female-student-learning-english-online_23-2148999543.jpg?w=1800&t=st=1684306235~exp=1684306835~hmac=f6e33b309924e8b215d0ff75c29059f868fb8731479845509518fb417e77b4c4');
+            background-repeat: no-repeat;
+            background-size: 1700px 1000px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            text-align: center;
+            backdrop-filter: blur;
+            display: block;
+            font-weight: none;
+            color: black;
+        }
+
+        input,
+        textarea {
+
+            display: block;
+            margin-bottom: 15px;
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        textarea {
+
+            height: 100px;
+        }
+
+        form {
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 40%;
+            margin: auto;
+            height: 400px;
+            border: 2px solid white;
+        }
+
+        * {
+            align-items: center;
+        }
+
+            .sub {
+                background: transparent;
+                display: block;
+                margin-top: 10px;
+                padding: 12px;
+                background-color: green;
+                color: white;
+                border: none;
+                border-radius: 12px;
+                cursor: pointer;
+            }
+
+            #note-list {
+                width: 35%;
+                margin: 20px auto;
+                background-color: white;
+                padding: 50px;
+                border-radius: 5px;
+            }
+    </style>
+
+    </style>
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <h1>Note log</h1>
+    <form action="notelog.html">
+        <label for="Notetitle">NOTE TITLE:</label>
+        <input type="text" id="Notetitle" name="Notetitle">
+
+        <label for="date">DATE:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="time">TIME:</label>
+        <input type="time" id="time" name="time">
+
+        <label for="note">NOTE:</label>
+        <textarea id="note" name="note" rows="4"></textarea>
+
+        <input type="submit" value="ADD NOTE" class="sub">
+    </form>
+    <div id="note-list"></div>
+
+
+</body>
+
+</html>

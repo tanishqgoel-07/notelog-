@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<style>
+    * {
+        font-family: 'poppins';
+        color: black;
+    }
+
+    body {
+        background-image: url('https://img.freepik.com/free-photo/female-student-learning-english-online_23-2148999543.jpg?w=1800&t=st=1684306235~exp=1684306835~hmac=f6e33b309924e8b215d0ff75c29059f868fb8731479845509518fb417e77b4c4');
+        background-repeat: no-repeat;
+        background-size: 1500px 800px;
+
+    }
+
+    .mainbox {
+        backdrop-filter: blur(15px);
+        height: 550px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+        margin-bottom: 6%;
+        border: black border-radius: 15px;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 8px;
+    }
+
+    .en {
+        background: transparent;
+        width: 35%;
+        margin-left: 10px;
+        border: none;
+        border-bottom: 2px solid black;
+        color: black;
+        font-size: 18px;
+        padding-bottom: 10px;
+        margin-bottom: 35px;
+    }
+
+    .em {
+        background: transparent;
+        width: 70%;
+        border: none;
+        border-bottom: 2px solid black;
+        color: black;
+        font-size: 18px;
+        padding-bottom: 10px;
+        margin-bottom: 35px;
+
+    }
+
+    ::placeholder {
+        color: black;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <div class="mainbox">
+        <form action="login.html">
+            <h1 style="text-align: center; color: black; margin-top: 40px; margin-bottom: 50px;">SIGN UP</h1>
+            <input type="text" placeholder="First name" name="fname" class="en" required><input type="text"
+                placeholder="Last name" name="lname" class="en">
+            <input type="email" placeholder="Email" name="Email" class="em" required>
+            <input type="password" placeholder="Password" name="Pass" value="" class="em" required minlength="5">
+            <br>
+            <input type="password" placeholder="Confirm Password" name="Pass" value="" class="em" required
+                minlength="5">
+            <br>
+            <input type="checkbox" name="r" id="rem"><label for="rem">Remember me</label>
+            <br>
+            <input type="checkbox" name="b" id="q"><label for="q">I agree to Terms of Service and Privacy
+                Policy.</label>
+            <input type="submit" value="Create an account"
+                style="margin-top: 20px; width: 180px; height: 30px; color: black; border-radius: 12px; font-size: 18px;">
+                <br>
+            <p>already have an account <a href="login.html">login</a></p>
+        </form>
+    </div>
+   
+</body>
+
+</html>
